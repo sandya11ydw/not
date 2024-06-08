@@ -1,0 +1,16 @@
+function createNote() {
+  var noteContent = prompt('Enter your note:');
+  if (noteContent !== null && noteContent.trim() !== '') {
+    var noteHTML = `
+      <div class="note">
+        <p>${noteContent}</p>
+        <button class="delete-button" onclick="deleteNote(this)">🗑️</button>
+      </div>
+    `;
+    document.getElementById('notesList').insertAdjacentHTML('beforeend', noteHTML);
+  }
+}
+
+function deleteNote(button) {
+  button.parentElement.remove();
+}

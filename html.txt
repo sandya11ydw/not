@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just Text</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="notepad-container">
+    <div class="notepad-header">
+      <h1>Just Text</h1>
+      <button onclick="createNote()">Save 📝</button>
+    </div>
+    <div id="notesList"></div>
+  </div>
+  <div class="app-name">
+    <h2>Just Text</h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
